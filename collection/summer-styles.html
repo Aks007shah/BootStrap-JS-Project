@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Clothing Store</title>
+    <meta name="Description" content="Welcome to my website! Kids Store.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="icon" href="images/Small_Panda-removebg-preview.png"> -->
+    <link rel="icon" href="/images/Small_Panda-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="\myjs.js"></script>
+</head>
+
+<body>
+
+    <header>
+        
+        <!-- HEADER STARTS HERE -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <marquee class="bg-white" width="100%" direction="alternate" height="22px">
+                        <img src="images/Small_Panda-removebg-preview.png" height="15px" alt="">Flat 20% to our new
+                        users. <span class="text-danger">Signup and Avail discounts now!!!</span>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <!-- first nav -->
+        <nav class="navbar  navbar-expand-lg bg-body-tertiary navbar-1">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/Small_Panda-removebg-preview.png" alt=""
+                        height="70px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li><input class="form-control me-2" type="search" placeholder="Search category, products"
+                                aria-label="Search">
+                        </li>
+
+                    </ul>
+
+
+                    <p class="mx-1 mt-4">Trusted Dealers</p>
+                    <img src="images/authenticity (1).png" height="35px" alt="">
+
+                    <p class="mx-1 mt-4">Upto 50% Off</p>
+                    <img src="images/hot-deal.png" height="35px" alt="">
+
+                    <form class="d-flex" role="search">
+
+                        <button class="btn btn-outline-success mx-2" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            type="submit"><i class="fa-solid fa-right-to-bracket fa-beat-fade mx-1"
+                                style="color: #ffda6a;"></i>Login</button>
+                        <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticsignup"
+                            type="submit"><i class="fa-solid fa-user-plus fa-beat-fade mx-1"
+                                style="color: #ffda6a;"></i>Signup</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- first nav ends-->
+
+        <!-- modal scripts -->
+        <!-- Modal Login -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="exampleModalLabel">Login Now!</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Signup-->
+        <div class="modal fade" id="staticsignup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="staticBackdropLabel">Sign-up Now!</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Address 2</label>
+                                <input type="text" class="form-control" id="inputAddress2"
+                                    placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputState" class="form-label">State</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputZip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Check me out
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Sign up!</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal Newsletter-->
+<div class="modal fade" id="Newslettermodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="NewslettermodalModalLabel">Newsletter!</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+              <form name="newsLetter" onsubmit="return newsLetterBtn()">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" name="newsLetterform" id="exampleFormControlInput1" placeholder="name@example.com"> <span id="error_newsletter"></span> <br>
+
+                <button type="submit" class="btn btn-warning mt-3">Submit</button>
+            </form>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+        <!-- modal scripts -->
+
+
+
+        <!-- second nav -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid navbar2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                ALL CATEGORIES
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">More Categories Ahead</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                BOYS FASHION
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">More Categories Ahead</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                GIRLS FASHION
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">More Categories Ahead</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">FOOTWEAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">TOYS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">DIAPERING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">GEAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">FEEDING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">BATH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">NURSERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">MOMS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">HEALTH</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER ENDS HERE -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="text-center text-danger mt-4">Summer Styles!</h1>
+                <h5 class="text-center">Your Kids Favourite</h5>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container-fluid text-center">
+        <div class="row justify-content-center text-center">
+            <div class="col-sm-12 text-center">
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <ol class="breadcrumb text-center">
+                        <li class="breadcrumb-item text-center"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="row row-cols-1 row-cols-md-3 mx-1 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/13846390a.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                  <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                  <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                  <button type="button" class="btn btn-outline-success">Wishlist</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/14013435e.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                    <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                    <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                    <button type="button" class="btn btn-outline-success">Wishlist</button>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/14466366a.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                    <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                    <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                    <button type="button" class="btn btn-outline-success">Wishlist</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid text-center">
+        <div class="row">
+          <div class="row row-cols-1 row-cols-md-3 mx-1 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/13675071a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                    <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                    <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                    <button type="button" class="btn btn-outline-success">Wishlist</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/14514209a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                      <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                      <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                      <button type="button" class="btn btn-outline-success">Wishlist</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/14620604a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                      <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                      <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                      <button type="button" class="btn btn-outline-success">Wishlist</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="row row-cols-1 row-cols-md-3 mx-1 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/14102619a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                    <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                    <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                    <button type="button" class="btn btn-outline-success">Wishlist</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/14235996a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                      <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                      <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                      <button type="button" class="btn btn-outline-success">Wishlist</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/14176739a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                      <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                      <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                      <button type="button" class="btn btn-outline-success">Wishlist</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="row row-cols-1 row-cols-md-3 mx-1 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/14144863a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                    <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                    <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                    <button type="button" class="btn btn-outline-success">Wishlist</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/13865647a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                      <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                      <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                      <button type="button" class="btn btn-outline-success">Wishlist</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/12955610a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                      <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                      <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                      <button type="button" class="btn btn-outline-success">Wishlist</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="row row-cols-1 row-cols-md-3 mx-1 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/13846390a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                    <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                    <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                    <button type="button" class="btn btn-outline-success">Wishlist</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/14620615a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                      <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                      <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                      <button type="button" class="btn btn-outline-success">Wishlist</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/11513599a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                      <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                      <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                      <button type="button" class="btn btn-outline-success">Wishlist</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="row row-cols-1 row-cols-md-3 mx-1 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/13846390a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                    <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                    <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                    <button type="button" class="btn btn-outline-success">Wishlist</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/14013435e.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                      <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                      <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                      <button type="button" class="btn btn-outline-success">Wishlist</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/14466366a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                      <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                      <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                      <button type="button" class="btn btn-outline-success">Wishlist</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="row row-cols-1 row-cols-md-3 mx-1 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/13208322a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                    <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                    <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                    <button type="button" class="btn btn-outline-success">Wishlist</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/14702879a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                      <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                      <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                      <button type="button" class="btn btn-outline-success">Wishlist</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/13882949a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                      <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                      <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                      <button type="button" class="btn btn-outline-success">Wishlist</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="row row-cols-1 row-cols-md-3 mx-1 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/13846390a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                    <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                    <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                    <button type="button" class="btn btn-outline-success">Wishlist</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/14013435e.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                      <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                      <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                      <button type="button" class="btn btn-outline-success">Wishlist</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="https://cdn.fcglcdn.com/brainbees/images/products/300x364/14466366a.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+                      <p> Rs 1000 <del>Rs 2000</del> <span class="text-danger">(50% off)</span></p>
+                      <button type="button" class="btn btn-outline-warning">Add To Cart</button>
+                      <button type="button" class="btn btn-outline-success">Wishlist</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+   
+
+    <!-- Return sections -->
+    <div class="container text-center mt-5 mb-5 border bg-light shadow p-3 mb-5">
+        <div class="row align-items-center mt-4">
+            <div class="col">
+                <i class="fa-solid fa-file-shield fa-fade fa-2xl mb-5" style="color: #ffc107;"></i>
+                <h3 class="text-danger">Secure Payments!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, accusantium.</p>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-truck-fast fa-bounce fa-2xl mb-5" style="color: #ffc107;"></i>
+                <h3 class="text-danger">Fast Shipping!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, accusantium.</p>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-rotate-left fa-spin fa-spin-reverse fa-2xl mb-5" style="color: #ffc107;"></i>
+                <h3 class="text-danger">Easy Returns!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, accusantium.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Return sections end-->
+
+  
+
+    <!-- FAQs section -->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 class="text-danger">Have Questions?</h2>
+                <h5 class="mb-3">We have the Answers!</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6"><div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                     Frequently Asked question #1
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                     Frequently Asked question #2
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                     Frequently Asked question #3
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-sm-6"><div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+           Frequently Asked question #4
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+           Frequently Asked question #5
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+           Frequently Asked question #6
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        </div>
+      </div>
+    </div>
+    </div>
+        </div>
+    </div>
+    <!-- FAQs section -->
+
+  <!-- Newsletter -->
+<div class="card text-center mt-5 mb-4 rounded-4 bg-warning shadow p-4 mb-5">
+    <div class="card-body">
+        <h2 class="card-title text-white">Subscribe to our Newsletter today!</h2>
+        <h5 class="card-text text">And get notified for all upcoming sales and deals.</h5>
+      <a href="#" class="btn btn-outline-dark mt-2" data-bs-toggle="modal" data-bs-target="#Newslettermodal">Subscribe</a>
+    </div>
+  </div>
+<!-- Newsletter -->
+
+
+
+
+<footer>
+<div class="container-fluid bg-warning">
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="images/Small_Panda-removebg-preview.png" height="150px" alt="">
+            <p><small class="fw-bold">Small Panda is <span class="text-danger">best kids Store!</span> Your go-to kids store for whimsical wonders! Discover a curated collection of adorable clothing, toys, and essentials for little ones. Quality, creativity, and joy in every delightful find.</small></p>
+        </div>
+
+
+        <div class="col-sm-2 mt-2">
+            <ul>
+                <h5 ><u>COMPANY INFO</u>
+                </h5>
+                <li>Home</li>
+                <li>About</li>
+                <li>Team</li>
+                <li>Contact</li>
+                <li>FAQs</li>
+            </ul>
+        </div>
+
+        <div class="col-sm-2 mt-2">
+            <ul>
+                <h5><ins>CATEGORIES</ins></h5>
+                <li>Clothing & Fashion
+                    </li>
+                <li>Toys
+                    </li>
+                <li>Books & CDs
+                    </li>
+                <li>School Supplies
+                    </li>
+                <li>Birthday Party Supplies
+                    </li>
+                <li>Baby Diapering
+                    </li>
+                <li>Feeding & Nursing
+                    </li>
+                <li>Bath & Skin Care
+                    </li>
+                    <!-- <li>Health & Safety
+                        </li>
+                    <li>Baby Gear
+                        </li>
+                    <li>Nursery
+                        </li>
+                    <li>Moms & Maternity
+                        </li>
+                    <li>Gifts
+                        </li> -->
+            </ul>
+        </div>
+        
+        
+
+        <div class="col-sm-2 mt-2">
+            <ul>
+                <h5><u>COMPANY INFO</u>
+                </h5>
+                <li>Home</li>
+                <li>About</li>
+                <li>Team</li>
+                <li>Contact</li>
+                <li>FAQs</li>
+            </ul>
+        </div>
+        <div class="col-sm-2 mt-2">
+            <ul>
+                <h5><u>COMPANY INFO</u>
+                </h5>
+                <li>Home</li>
+                <li>About</li>
+                <li>Team</li>
+                <li>Contact</li>
+                <li>FAQs</li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+
+</footer>
+    <!-- script js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- script js end-->
+</body>
+
+</html>

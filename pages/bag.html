@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Clothing Store- Autum Styles</title>
+    <meta name="Description" content="Welcome to my website! Kids Store.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/bag.css">
+    <!-- <link rel="icon" href="images/Small_Panda-removebg-preview.png"> -->
+    <link rel="icon" href="/images/Small_Panda-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- HEADER STARTS HERE -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <marquee class="bg-white" width="100%" direction="alternate" height="22px">
+                        <img src="/images/Small_Panda-removebg-preview.png" height="15px" alt="">Flat 20% to our new
+                        users. <span class="text-danger">Signup and Avail discounts now!!!</span>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <!-- first nav -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-1">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="/images/Small_Panda-removebg-preview.png" alt=""
+                        height="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li><input class="form-control me-2" type="search" placeholder="Search category, products"
+                                aria-label="Search">
+                        </li>
+                    </ul>
+
+                    <p class="mx-1 mt-4">Trusted Dealers</p>
+                    <img src="/images/authenticity (1).png" height="35" alt="">
+
+                    <p class="mx-1 mt-4">Upto 50% Off</p>
+                    <img src="/images/hot-deal.png" height="35" alt="">
+
+                    <form class="d-flex" role="search">
+
+                        <button class="btn btn-outline-success mx-2" type="button" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fa-solid fa-right-to-bracket fa-beat-fade mx-1"
+                                style="color: #ffda6a;"></i>Login</button>
+
+
+
+                        <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticsignup"
+                            type="button"><i class="fa-solid fa-user-plus fa-beat-fade mx-1"
+                                style="color: #ffda6a;"></i>Signup</button>
+                                <a href="/pages/bag.html" class="p-1 action-container text-decoration-none fw-bold ms-1">
+                                    <i class="fa-solid fa-bag-shopping fa-2xl" style="color: #fdbd0d;"></i>
+                                    <span id="bag-item-count" class="top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                                  </a> 
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- first nav ends-->
+
+        <!-- modal scripts -->
+        <!-- Modal Login -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="exampleModalLabel">Login Now!</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Signup-->
+        <div class="modal fade" id="staticsignup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="staticBackdropLabel">Sign-up Now!</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Address 2</label>
+                                <input type="text" class="form-control" id="inputAddress2"
+                                    placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputState" class="form-label">State</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputZip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Check me out
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Sign up!</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal Newsletter-->
+        <div class="modal fade" id="Newslettermodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="NewslettermodalModalLabel">Newsletter!</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <form name="newsLetter" onsubmit="return newsLetterBtn()">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" name="newsLetterform"
+                                    id="exampleFormControlInput1" placeholder="name@example.com"> <span
+                                    id="error_newsletter"></span> <br>
+
+                                <button type="submit" class="btn btn-warning mt-3">Submit</button>
+                            </form>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal scripts -->
+
+        <!-- second nav -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid navbar2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                ALL CATEGORIES
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">More Categories Ahead</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                BOYS FASHION
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">More Categories Ahead</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                GIRLS FASHION
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">More Categories Ahead</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">FOOTWEAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">TOYS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">DIAPERING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">GEAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">FEEDING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">BATH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">NURSERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">MOMS</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER ENDS HERE -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="text-center text-danger mt-4">Your Bag Items Here</h1>
+                <h5 class="text-center">Best Gift for Your Kids Wardrobe</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- here we have cards -->
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+
+            <div class="col-sm-7" id="bag">
+                <div class="bag-items-container">
+
+                        <!-- <div class="bag-item-container">
+                            <div class="item-left-part">
+                                <img class="bag-item-img" src="/images/autum-styles/autum1.webp">
+                            </div>
+                            <div class="item-right-part">
+                                <div class="company">${item.company}</div>
+                                <div class="item-name">${item.item_name}</div>
+                                <div class="price-container">
+                                    <span class="current-price">Rs ${item.current_price}</span>
+                                    <span class="original-price">Rs ${item.original_price}</span>
+                                    <span class="discount-percentage">(${item.discount_percentage}% OFF)</span>
+                                </div>
+                                <div class="return-period">
+                                    <span class="return-period-days">${item.return_period} days</span> return available
+                                </div>
+                                <div class="delivery-details">
+                                    Delivery by
+                                    <span class="delivery-details-days">${item.delivery_date}</span>
+                                </div>
+                            </div>
+
+                            <div class="remove-from-cart" onclick="removeFrombag('${item.id}')">X</div>
+                        </div> ` -->
+
+                        
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-5">
+                    <div class="bag-summary ">
+                        
+                        
+
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Return sections -->
+    <div class="container text-center mt-5 mb-5 border bg-light shadow p-3 mb-5">
+        <div class="row align-items-center mt-4">
+            <div class="col">
+                <i class="fa-solid fa-file-shield fa-fade fa-2xl mb-5" style="color: #ffc107;"></i>
+                <h3 class="text-danger">Secure Payments!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, accusantium.</p>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-truck-fast fa-bounce fa-2xl mb-5" style="color: #ffc107;"></i>
+                <h3 class="text-danger">Fast Shipping!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, accusantium.</p>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-rotate-left fa-spin fa-spin-reverse fa-2xl mb-5" style="color: #ffc107;"></i>
+                <h3 class="text-danger">Easy Returns!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, accusantium.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Return sections end-->
+
+
+
+
+
+    <!-- Newsletter -->
+    <div class="card text-center mt-5 mb-4 rounded-4 bg-warning shadow p-4 mb-5">
+        <div class="card-body">
+            <h2 class="card-title text-white">Subscribe to our Newsletter today!</h2>
+            <h5 class="card-text text">And get notified for all upcoming sales and deals.</h5>
+            <a href="#" class="btn btn-outline-dark mt-2" data-bs-toggle="modal"
+                data-bs-target="#Newslettermodal">Subscribe</a>
+        </div>
+    </div>
+    <!-- Newsletter -->
+
+
+
+
+    <footer>
+        <div class="container-fluid bg-warning">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="/images/Small_Panda-removebg-preview.png" height="150px" alt="">
+                    <p><small class="fw-bold">Small Panda is <span class="text-danger">best kids Store!</span> Your
+                            go-to kids store for whimsical wonders! Discover a curated collection of adorable clothing,
+                            toys, and essentials for little ones. Quality, creativity, and joy in every delightful
+                            find.</small></p>
+                </div>
+
+                <div class="col-sm-2 mt-2">
+                    <ul>
+                        <h5><u>COMPANY INFO</u>
+                        </h5>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Team</li>
+                        <li>Contact</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-2 mt-2">
+                    <ul>
+                        <h5><ins>CATEGORIES</ins></h5>
+                        <li>Clothing & Fashion
+                        </li>
+                        <li>Toys
+                        </li>
+                        <li>Books & CDs
+                        </li>
+                        <li>School Supplies
+                        </li>
+                        <li>Birthday Party Supplies
+                        </li>
+                        <li>Baby Diapering
+                        </li>
+                        <li>Feeding & Nursing
+                        </li>
+                        <li>Bath & Skin Care
+                        </li>
+                        <!-- <li>Health & Safety
+                        </li>
+                    <li>Baby Gear
+                        </li>
+                    <li>Nursery
+                        </li>
+                    <li>Moms & Maternity
+                        </li>
+                    <li>Gifts
+                        </li> -->
+                    </ul>
+                </div>
+
+
+
+                <div class="col-sm-2 mt-2">
+                    <ul>
+                        <h5><u>COMPANY INFO</u>
+                        </h5>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Team</li>
+                        <li>Contact</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 mt-2">
+                    <ul>
+                        <h5><u>COMPANY INFO</u>
+                        </h5>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Team</li>
+                        <li>Contact</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+    </footer>
+    <!-- script js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+    <!-- myscripts -->
+    <script src="/data/item.js"></script>
+    <script src="../scripts/myjs.js"></script>
+    <script src="../scripts/bag.js"></script>
+
+    <!-- script js end-->
+</body>
+
+</html>
